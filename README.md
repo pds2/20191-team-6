@@ -15,3 +15,5 @@ variando entre estilo conservador e arriscado.
 4. Como o Dealer, o baralho precisa estar randomizado e deve garantir essa aleatoriedade, para que os jogadores se sintam seguros para jogar e, assim, o dealer possa distribuir as cartas aleatoriamente.
 
 5. Um usuário, como jogador, deve poder tomar decisões assim que recebe suas cartas, e para isso tem opções de <i> hit, dobrar, split </i>.
+
+6. Um usuário, como jogador, poderá apostar e decidir o quanto apostar com os outros jogadores.

@@ -11,6 +11,9 @@ using namespace std;
 class Jogador {
 
 private:
+	Jogador(/* args */);
+	~Jogador();
+
 	vector<int> idCartas;
 	string nomeJogador;
 	double saldo;
@@ -21,7 +24,6 @@ private:
 	string reader;
 
 public:
-//criar contrutor
 
 	void fazJogada(int id, vector<Carta> baralho);
 	void fazAposta();
@@ -41,6 +43,14 @@ public:
 
 
 };
+
+Jogador::Jogador(/* args */)
+{
+}
+
+Jogador::~Jogador()
+{
+}
 
 
 #endif // !JOGADOR_H

@@ -1,7 +1,7 @@
 #include "Jogador.h"
 
 void Jogador::fazJogada(int id, vector<Carta> baralho) {
-
+    
 }
 
 void Jogador::fazAposta() {

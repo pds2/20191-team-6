@@ -4,7 +4,7 @@ void Jogo::jogo(){
 
 }
 
-static string Jogo::decidir(){
+string Jogo::decidir(){
 
 }
 
@@ -41,5 +41,5 @@ void Jogo::novaRodada(){
 }
 
 static void distribuiCartas(){
-    
+
 }

@@ -7,7 +7,7 @@ void Baralho::embaralha() {
 	}
 }
 
-vector<Carta> Baralho::setBaralho() {
+vector<Carta> Baralho::criaBaralho() {
 	string nomeCarta;
 	string naipeCarta;
 	this->baralho.begin();

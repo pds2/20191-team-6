@@ -11,7 +11,7 @@ private:
 	void embaralha();
 
 public:
-	vector<Carta> setBaralho();
+	vector<Carta> criaBaralho();
 
 
 };

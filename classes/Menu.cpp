@@ -8,6 +8,10 @@ void Menu::saldoInicial(int numJogadores){
 
 }
 
+vector<Jogador> Menu::executaMenu(){
+    
+}
+
 void Menu::init(){
 
 }

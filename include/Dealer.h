@@ -1,21 +1,9 @@
-#ifndef DEALER_H
-#define DEALER_H
+#include "Player.h"
+#include "Carta.h"
 
-#include "Jogador.h"
-
-class Dealer : public Jogador{
-
-private:
-    /* data */
-public:
-    Dealer(/* args */);
-    ~Dealer();
+public class Dealer : public Player{
+    private Carta cartaFechada;
     
-    virtual void pegarCarta();
-    virtual void descartaMao();
-    virtual void imprimeMao(vector<Carta> baralho);
-    
+    public Dealer::getCartaFechada();
+    public Dealer::setCartaFechada();
 };
-
-
-#endif // !DEALER_H

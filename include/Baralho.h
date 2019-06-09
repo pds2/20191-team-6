@@ -1,29 +1,10 @@
-#ifndef BARALHO_H
-#define BARALHO_H
-
 #include "Carta.h"
-using namespace std;
+#include <vector>
 
-class Baralho
-{
-private:
-	vector<Carta> baralho;
-	void embaralha();
-	
-public:
-	Baralho(/* args */);
-	~Baralho();
-	
-	vector<Carta> criaBaralho();
+public class Baralho{
+    private vector<Carta> baralho; 
+    
+    public void Baralho::shufle();
+    public void Baralho::start();//construtor
+    public void Baralho::kill();//destrutor
 };
-
-Baralho::Baralho(/* args */)
-{
-}
-
-Baralho::~Baralho()
-{
-}
-
-
-#endif // !BARALHO_H

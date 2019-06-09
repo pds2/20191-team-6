@@ -1,5 +1,8 @@
 #include "Menu.h"
 
+
+//ISSO VIRA O MAIN??? PROVAVEL, MAS CHECAR MAIS TARDE
+
 void Menu::criaJogadores(int id){
 
 }

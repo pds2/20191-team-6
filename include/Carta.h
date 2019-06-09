@@ -1,42 +1,17 @@
-#ifndef CARTA_H
-#define CARTA_H
 
-#include <vector>
-#include <string>
-#include <iostream>
-#include <cstdlib>
-using namespace std;
 
-class Carta {
 
-private:
-	string nome;
-	string naipe;
-	int valor;
-	bool isOnTable;
-	void setValor(string nome);
+public class Carta{
+    private int naipe;
+    private int numeroCarta;
+    private int valor;    
+    
+    public void Carta::getNaipe();
+    public void Carta::setNaipe();
 
-public:
-	Carta(string input_nome, string input_naipe);
-	~Carta();
-
-	void puxarCarta();
-	int getValor();
-	string getNome();
-	string getNaipe();
-	bool foiUsado();
-
+    public void Carta::getNaipe();
+    public void Carta::setNaipe();
+    
+    public void Carta::getNaipe();
+    public void Carta::setValor();
 };
-
-Carta::Carta(string input_nome, string input_naipe)
-{
-	nome = input_nome;
-	naipe = input_naipe;
-	setValor(input_nome);
-}
-
-Carta::~Carta()
-{
-}
-
-#endif // !CARTA_H

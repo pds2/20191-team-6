@@ -1,4 +1,4 @@
-#include "Jogador.h"
+#include "Player.h"
 
 void Jogador::fazJogada(int id, vector<Carta> baralho) {
     

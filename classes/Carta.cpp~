@@ -70,10 +70,3 @@ int Carta::getValor(){
 void Carta::setValor(int x){
     valor = x;
 }
-
-bool Carta::getFlag(){
-    return flag;
-}
-void Carta::setFlag(bool x){
-    flag = x;
-}

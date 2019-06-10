@@ -1,10 +1,15 @@
 #include "Carta.h"
 #include <vector>
+#include <cstdlib>
 
 public class Baralho{
-    private vector<Carta> baralho; 
+    private vector<Carta> baralho;
     
-    public void Baralho::shufle();
-    public void Baralho::start();//construtor
-    public void Baralho::kill();//destrutor
+    public Baralho();//construtor
+    public void ~Baralho();//destrutor
+    //public void shufle();
+    public void darCarta(Carta carta);
 };
+
+
+

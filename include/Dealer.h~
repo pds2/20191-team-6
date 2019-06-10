@@ -8,4 +8,9 @@ public class Dealer : public Player{
     public Dealer::setCartaFechada();
 };
 
-
+Carta getCartaFechada(){
+    return cartaFechada;
+}
+void setCartaFechada(Carta carta){
+    cartaFechada = Carta(carta.naipe, carta.numeroCarta, carta.valor, carta.bool);
+}

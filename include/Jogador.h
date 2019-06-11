@@ -40,17 +40,6 @@ public:
 	void getValorMao();
 	vector<int> getIDcartas();
 
-
-
 };
-
-Jogador::Jogador(/* args */)
-{
-}
-
-Jogador::~Jogador()
-{
-}
-
 
 #endif // !JOGADOR_H

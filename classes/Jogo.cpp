@@ -1,55 +1,9 @@
 #include "Jogo.h"
 #include <stdlib>
 
-/*void Jogo::jogo(){
-
-}
-
-string Jogo::decidir(){
-
-}
-
-void Jogo::novoBaralho(){
-
-}
-
-void Jogo::imprimeSaldos(){
-
-}
-
-bool Jogo::verificaMaos(){
-
-}
-
-bool Jogo::verificaSaldos(){
-
-}
-
-void Jogo:: pagaPremios(){
-
-}
-
-void Jogo::comecaRodada(){
-
-}
-
-void Jogo::terminaRodada(){
-
-}
-
-void Jogo::novaRodada(){
-
-}
-
-static void distribuiCartas(){
-
-}*/
-
 Jogo::Jogo(){
     deck = Baralho();
 }
-
-Jogo::~Jogo(){}
 
 void Jogo::quemGanhou(){
     int maior, indice;

@@ -1,28 +1,35 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <cstdlib>
 #include "Carta.h"
 
-public class Player{
-    private string name;
-    private int pontosCartas;
-    private vector<Carta> mao;
-    private int pontoTotal;
+class Player{
 
-    public Player(sring nome);
-    public ~Player();
+private:
+    string name;
+    int pontosCartas;
+    vector<Carta> mao;
+    int pontoTotal;
 
-    public getName();
-    public setName(string nome);
-    public getPontosCartas();
-    public setPontosCartas(int x);
-    public getMao();
-    public setMao(Carta carta);
-    public cleanMao();
-    public getPontoTotal();
-    public setPontoTotal(int x);
+public:
+    Player(string nome);
+    ~Player();
+
+    string getName();
+    void setName(string nome);
+    int getPontosCartas();
+    void setPontosCartas(int x);
+    vector<Carta> getMao();
+    void setMao(Carta carta);
+    void cleanMao();
+    int getPontoTotal();
+    void setPontoTotal(int x);
     
 };
 
 
+#endif // !PLAYER_H

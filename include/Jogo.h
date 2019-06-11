@@ -1,15 +1,22 @@
+#ifndef JOGO_H
+#define JOGO_H
+
 #include "Baralho.h"
 #include "Player.h"
 #include "Dealer.h"
 
-public class Jogo{
-    private vector<Player> jogadores;
-    private Baralho deck;
+class Jogo{
+
+private:
+    vector<Player> jogadores;
+    Baralho deck;
     
-    public void quemGanhou();
-    public void addPlayer(Player jogador);
-    public void removePlayers();
+public:
+	Jogo();
+	~Jogo();
+	void quemGanhou();
+    void addPlayer(Player jogador);
+    void removePlayers();
 };
 
-
-
+#endif // !JOGO_H

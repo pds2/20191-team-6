@@ -1,29 +1,32 @@
+#ifndef CARTA_H
+#define CARTA_H
+
 #include <iostream>
 using namespace std
 
+class Carta{
 
-public class Carta{
-    private int naipe;
-    private int numeroCarta;
-    private int valor;
+private:
+    int naipe;
+    int numeroCarta;
+    int valor;
     //true esta no baralho
     //false esta na mao do jogador    
-    private bool flag;    
+    bool flag;    
 
-    public Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);
-    public Carta();
-    
+public:
+    Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);
+    Carta();
+    ~Carta();
 
-    public int getNaipe();
-    public void setNaipe(int x);
-
-    public int getNumeroCarta();
-    public void getNumeroCarta(int x);
-    
-    public int getValor();
-    public void setValor(int x);
-
-    public bool getFlag();
-    public void setFlag(bool x);
+    int getNaipe();
+    void setNaipe(int x);
+    int getNumeroCarta();
+    void getNumeroCarta(int x);
+    int getValor();
+    void setValor(int x);
+    bool getFlag();
+    void setFlag(bool x);
 };
 
+#endif // !CARTA_H

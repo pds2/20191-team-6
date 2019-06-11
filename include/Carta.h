@@ -11,6 +11,7 @@ public class Carta{
     private bool flag;    
 
     public Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);
+    public Carta();
     
 
     public int getNaipe();

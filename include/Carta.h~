@@ -5,7 +5,9 @@ using namespace std
 public class Carta{
     private int naipe;
     private int numeroCarta;
-    private int valor;    
+    private int valor;
+    //true esta no baralho
+    //false esta na mao do jogador    
     private bool flag;    
 
     public Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);

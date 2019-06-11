@@ -7,9 +7,4 @@ public class Jogo{
     private Baralho deck;
     
     public void quemGanhou();
-    public void addPlayer(Player jogador);
-    public void removePlayers();
 };
-
-
-

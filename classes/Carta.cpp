@@ -38,6 +38,12 @@ Carta::Carta(int naipeIn, int numeroCartaIn, int valorIn){
     setNumeroCarta(numeroCartaIn);
     setValor(valorIn);
 }
+
+Carta::Carta(){
+    setNaipe(0);
+    setNumeroCarta(0);
+    setValor(0);
+}
     //get e set pro naipe
     //Ouros = 1
     //Paus = 2

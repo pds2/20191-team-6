@@ -2,7 +2,7 @@
 #define CARTA_H
 
 #include <iostream>
-using namespace std
+using namespace std;
 
 class Carta{
 
@@ -11,8 +11,8 @@ private:
     int numeroCarta;
     int valor;
     //true esta no baralho
-    //false esta na mao do jogador    
-    bool flag;    
+    //false esta na mao do jogador
+    bool flag;
 
 public:
     Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);

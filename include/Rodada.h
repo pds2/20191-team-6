@@ -1,10 +1,11 @@
 #include "Jogo.h"
+#include "Player.h"
 
 class Rodada : public Jogo {
-    
+
 public:
-	void sortearCartas(Baralho deck, vector<Players> jogadores, Dealer dealer);
-    void limparMao(vector<Players> jogadores);
+	void sortearCartas(Baralho deck, vector<Player> jogadores, Dealer dealer);
+    void limparMao(vector<Player> jogadores);
     void start();//construtor?
     void kill();//destrutor?
     void quemGanhou(Dealer dealer);//override

@@ -5,26 +5,22 @@
 
 class Menu {
 private:
-    vector<Jogador> jogadores;
+    vector<Player> jogadores;
     int numJogadores;
     string reader;
     void criaJogadores(int id);
     void saldoInicial(int numJogadores);
 
 public:
-    Menu(/* args */);
+    Menu(int n_jogadores);
     ~Menu();
-    
-    vector<Jogador> executaMenu();
+
+    vector<Player> executaMenu();
     void init();
     void setNumJogadores();
     int getNumJogadores();
 
 };
-
-Menu::Menu(/* args */)
-{
-}
 
 Menu::~Menu()
 {

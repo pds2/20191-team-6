@@ -28,8 +28,11 @@ public:
     void cleanMao();
     int getPontoTotal();
     void setPontoTotal(int x);
-    
+
 };
 
+Player::~Player()
+{
+}
 
 #endif // !PLAYER_H

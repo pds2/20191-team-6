@@ -1,6 +1,6 @@
 ﻿#include "Baralho.h"
 
-void Baralho::Baralho(){
+Baralho::Baralho(){
     int valorAux;
     for(int i = 1; i < 5; i++){
         for(j = 1; j < 14; j++){
@@ -29,5 +29,5 @@ void Baralho::darCarta(Carta carta){
             baralho[random].flag = false;
             break;
         }
-    }    
+    }
 }

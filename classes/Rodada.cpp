@@ -35,7 +35,7 @@ void Jogo::quemGanhou(Dealer dealer){
 		cout << "Dealer venceu";
 		dealer.setPontoTotal(dealer.getPontoTotal() + 1);
 	}
-	else{ 
+	else{
 		if(empate){
         cout << "Os vencedores(as) foram " << jogadores[indice].name << " e " << jogadores[indice2].name << " com " <<  jogadores[indice].pontosCartas << " e com " << jogadores[indice].mao.size() << " cartas na mao";
         jogadores[indice].setPontoTotal(dealer.getPontoTotal() + 1);
@@ -45,5 +45,5 @@ void Jogo::quemGanhou(Dealer dealer){
 			cout << "O vencedor(a) foi " << jogadores[indice].name <<  " com " <<  jogadores[indice].pontosCartas  << " cartas na mao";
             jogadores[indice].setPontoTotal(dealer.getPontoTotal() + 1);
 		}
-	}    
+	}
 }

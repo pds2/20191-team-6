@@ -3,16 +3,32 @@
 #include "Player.h"
 #include "Dealer.h"
 #include "Rodada.h"
+#include "Menu.h"
 
+using namespace std;
 
 int main (){
+
+    int n_rodadas, n_jogadores;
+
+    cout << "Bemvindo  e etc" << endl;
+    cout << "Regras do jogo" << endl;
+    cout << "Escolha o numero de jogadores:" << endl;
+    cin >> n_jogadores;
+    cout << "Escolha o numero de rodadas" << endl;
+    cin >> n_rodadas;
+
+    //instanciar um Menu
+    Menu* menu = new Menu(n_jogadores);
+    menu->init();
+
     //inicia as variaveis que precisa
 
     //da input dos parametros do jogo:
     //qtde de rodadas
     //qtde de jogadores
     //info dos jogadores
-    
+
     //setar o jogo
     //construir o estado inicial
 
@@ -24,5 +40,8 @@ int main (){
 
     //reiniciar jogo ou matar programa
 
+    cout << "Numero de jogadores: " << n_jogadores << endl;
+    cout << "Numero de rodadas: " << n_rodadas << endl;
+    delete menu;
     return 0;
 }

@@ -1,6 +1,6 @@
 #include "Player.h"
 
-void Player::Player(string nome){
+Player::Player(string nome){
     setName(nome);
 	setPontoTotal(0);
 }
@@ -9,7 +9,7 @@ string Player::getName(){
     return name;
 }
 void Player::setName(string nome){
-    name = nome;//funcao pra copiar, atribuicao direta funciona??    
+    name = nome;//funcao pra copiar, atribuicao direta funciona??
 }
 
 int Player::getPontosCartas(){

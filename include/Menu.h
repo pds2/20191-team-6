@@ -3,22 +3,24 @@
 
 #include "Jogo.h"
 
-class Menu {
+class Menu{
+
 private:
     vector<Player> jogadores;
     int numJogadores;
+    int numRodadas;
     string reader;
-    void criaJogadores(int id);
-    void saldoInicial(int numJogadores);
+    void criaJogadores();
 
 public:
     Menu(int n_jogadores);
     ~Menu();
 
-    vector<Player> executaMenu();
     void init();
-    void setNumJogadores();
+    void setNumJogadores(int n_jogadores);
     int getNumJogadores();
+    void setNumRodadas(int n_rodadas);
+    int getNumRodadas();
 
 };
 

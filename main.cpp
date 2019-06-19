@@ -19,16 +19,10 @@ int main (){
     cin >> n_rodadas;
 
     //instanciar um Menu
-    Menu* menu = new Menu(n_jogadores);
+    Menu* menu = new Menu(n_jogadores, n_rodadas);
     menu->init();
 
-    //inicia as variaveis que precisa
-
-    //da input dos parametros do jogo:
-    //qtde de rodadas
-    //qtde de jogadores
-    //info dos jogadores
-
+    
     //setar o jogo
     //construir o estado inicial
 

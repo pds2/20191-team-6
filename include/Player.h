@@ -12,12 +12,14 @@ class Player{
 private:
     string name;
     int pontosCartas;
-    vector<Carta> mao;
     int pontoTotal;
 
 public:
+
     Player(string nome);
     ~Player();
+
+    vector<Carta> mao;
 
     string getName();
     void setName(string nome);

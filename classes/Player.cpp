@@ -15,18 +15,18 @@ void Player::setName(string nome){
 int Player::getPontosCartas(){
     return pontosCartas;
 }
-int Player::setPontosCartas(int x){
+void Player::setPontosCartas(int x){
     pontosCartas = x;
 }
 
-vector<carta> Player::getMao(){
+vector<Carta> Player::getMao(){
     return mao;
 }
 void Player::setMao(Carta carta){
     mao.push_back(carta);
 }
 void Player::cleanMao(){
-    while(mao.size > 0) {
+    while(mao.size() > 0) {
         mao.pop_back();
     }
 }

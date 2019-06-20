@@ -4,20 +4,20 @@
 //quem fez 21, se teve empate e os criterios de desempate...
 
 
-void Jogo::quemGanhou(Dealer dealer){
+void Rodada::quemGanhou(Dealer dealer){
     int maior, indice, i;
     maior = -1;
 	indice = 0;
 	int indice2;
 	bool empate = false;
 	bool looser = false;
-    for(i = 0; i < jogadores.size(); i++){
+    for(i = 0; i < (int)jogadores.size(); i++){
         if(jogadores[i].getPontosCartas() > maior && jogadores[i].getPontosCartas() < 22){
             maior = jogadores[i].getPontosCartas();
             indice = i;
         }
     }
-	for(int i = 0; i < jogadores.size(); i++){
+	for(int i = 0; i < (int)jogadores.size(); i++){
 		if(jogadores[i].getPontosCartas() == maior && i != indice ){
             if(jogadores[i].mao.size() < jogadores[indice].mao.size()){
 				indice = i;
@@ -37,12 +37,12 @@ void Jogo::quemGanhou(Dealer dealer){
 	}
 	else{
 		if(empate){
-        cout << "Os vencedores(as) foram " << jogadores[indice].name << " e " << jogadores[indice2].name << " com " <<  jogadores[indice].pontosCartas << " e com " << jogadores[indice].mao.size() << " cartas na mao";
+        cout << "Os vencedores(as) foram " << jogadores[indice].getName() << " e " << jogadores[indice2].getName() << " com " <<  jogadores[indice].getPontosCartas() << " e com " << jogadores[indice].mao.size() << " cartas na mao";
         jogadores[indice].setPontoTotal(dealer.getPontoTotal() + 1);
 		jogadores[indice2].setPontoTotal(dealer.getPontoTotal() + 1);
 		}
 		else{
-			cout << "O vencedor(a) foi " << jogadores[indice].name <<  " com " <<  jogadores[indice].pontosCartas  << " cartas na mao";
+			cout << "O vencedor(a) foi " << jogadores[indice].getName() <<  " com " <<  jogadores[indice].getPontosCartas()  << " cartas na mao";
             jogadores[indice].setPontoTotal(dealer.getPontoTotal() + 1);
 		}
 	}

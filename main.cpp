@@ -22,7 +22,7 @@ int main (){
     Menu menu = Menu(n_jogadores);
     menu.init();
 
-    Jogo jogo = Jogo();
+    Jogo jogo = Jogo(n_rodadas);
     //setar o jogo
     //construir o estado inicial
 

@@ -1,32 +1,35 @@
 #include "Jogo.h"
-#include <stdlib>
 
 Jogo::Jogo(int n_rodadas){
     setNumRodadas(n_rodadas);
     deck = Baralho();
 }
 
-void setNumRodadas(int n_rodadas){
+Jogo::~Jogo(){
+    delete &deck;
+}
+
+void Jogo::setNumRodadas(int n_rodadas){
     numRodadas = n_rodadas;
 }
 
-int getNumRodadas(){
+int Jogo::getNumRodadas(){
     return numRodadas;
 }
 
 void Jogo::quemGanhou(){
-    int maior, indice;
+    int maior, indice = 0;
     maior = 0;
-    for(int i = 0; i < jogadores.size(); i++){
-        if(jogadores[i].pontoTotal > maior){
-            maior = jogadores[i].pontoTotal;
+    for(int i = 0; i < (int)jogadores.size(); i++){
+        if(jogadores[i].getPontoTotal() > maior){
+            maior = jogadores[i].getPontoTotal();
             indice = i;
         }
     }
-    cout << "O vencedor(a) foi " << jogadores[indice].name << " com " << jogadores[indice].pontoTotal << " pontos.\n"
+    cout << "O vencedor(a) foi " << jogadores[indice].getName() << " com " << jogadores[indice].getPontoTotal() << " pontos.\n";
 }
 
-void Jogo::addPlayers(Player jogador){
+void Jogo::addPlayer(Player jogador){
     jogadores.push_back(jogador);
 }
 

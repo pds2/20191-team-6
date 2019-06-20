@@ -8,12 +8,13 @@
 
 class Baralho{
 
-private:
-	vector<Carta> baralho;
-
 public:
+
 	Baralho();//construtor
 	~Baralho();//destrutor
+
+	vector<Carta> baralho;
+	
     void darCarta(Carta carta);
 };
 

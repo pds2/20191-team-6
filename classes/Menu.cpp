@@ -11,9 +11,9 @@ void Menu::criaJogadores(){
         cout << "Insira o nome do jogador " << i << endl;
         cout << "Nome: ";
         cin >> reader;
-        Player* jogador = new Player(reader);
+        Player jogador = Player(reader);
         jogadores.push_back(jogador);
-        
+        reader.clear();
     }
 }
 

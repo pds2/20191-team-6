@@ -6,16 +6,19 @@
 class Menu{
 
 private:
-    static vector<Player> jogadores;
     int numJogadores;
     static string reader;
     void criaJogadores();
 
 public:
+
     Menu(int n_jogadores);
     ~Menu();
 
+    static vector<Player> jogadores;
+
     void init();
+    void executaMenu();
     void setNumJogadores(int n_jogadores);
     int getNumJogadores();
     void setNumRodadas(int n_rodadas);

@@ -8,14 +8,13 @@ class Dealer : public Player{
 
 private:
     Carta cartaFechada;
-    
+
 public:
 	Dealer();
 	~Dealer();
-	
-	Carta getCartaFechada();
-    void setCartaFechada();
-};
 
+	Carta getCartaFechada();
+    void setCartaFechada(Carta carta);
+};
 
 #endif // !DEALER_H

@@ -15,6 +15,7 @@ private:
     bool flag;
 
 public:
+
     Carta(int naipeIn, int numeroCartaIn, int valirIn, bool flag);
     Carta();
     ~Carta();
@@ -22,7 +23,7 @@ public:
     int getNaipe();
     void setNaipe(int x);
     int getNumeroCarta();
-    void getNumeroCarta(int x);
+    void setNumeroCarta(int x);
     int getValor();
     void setValor(int x);
     bool getFlag();

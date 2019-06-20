@@ -8,8 +8,8 @@ MAIN := main.cpp
 #TESTER := program/tester.cpp
 
 SRCEXT := cpp
-SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
-OBJECTS := $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
+SOURCES := $(wildcard $(SRCDIR)/*.$(SRCEXT))
+OBJECTS := $(subst $(SRCDIR),$(OBJDIR),$(SOURCES:.$(SRCEXT)=.o))
 #TSTSOURCES := $(shell find $(TSTDIR) -type f -name *.$(SRCEXT))
 
 # -g debug, --coverage para cobertura
@@ -30,6 +30,9 @@ main: $(OBJECTS)
 #	$(BINDIR)/tester
 
 all: main
+
+valgrind: main
+	valgrind --leak-check=full --track-origins=yes $(BINDIR)/main
 
 coverage:
 	@mkdir -p coverage/

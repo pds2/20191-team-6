@@ -1,0 +1,8 @@
+#include "Pessoa.h"
+ virtual Pessoa::Pessoa(){
+
+}
+
+virtual Pessoa::~Pessoa(){
+
+}

@@ -22,7 +22,6 @@ void Menu::criaJogadores(){
         jogador.setName(reader);
         jogador.setPontosCartas(0);
         jogador.setPontoTotal(0);
-        jogador.setAction(true);
         jogadores.push_back(jogador);
         reader.clear();
     }

@@ -17,6 +17,7 @@ public:
     static vector<Player> jogadores;
 
     void init();
+    void executaMenu();
     void setNumJogadores(int n_jogadores);
     int getNumJogadores();
     void setNumRodadas(int n_rodadas);

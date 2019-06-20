@@ -13,5 +13,5 @@ void Dealer::setCartaFechada(Carta carta){
 }
 
 int Dealer::getPontosCartasDealer(){
-    return (getPontosCartas() + cartaFechada.getValor());
+    return getPontosCartas() + cartaFechada.getValor();
 }

@@ -25,7 +25,7 @@ public:
     void addPlayer(Player jogador);
     void removePlayers();
     void statusGeral();
-    void statusRodada(Dealer dealer, vector<string> naipes, vector<string> nomeCarta);
+    void statusRodada(Dealer dealer);
 };
 
 #endif // !JOGO_H

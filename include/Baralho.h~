@@ -16,7 +16,6 @@ public:
 	vector<Carta> baralho;
 	
     void darCarta(Carta carta);
-    void shufle();
 };
 
 

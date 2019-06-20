@@ -4,7 +4,6 @@ Carta::Carta(int naipeIn, int numeroCartaIn, int valorIn, bool flag){
     setNaipe(naipeIn);
     setNumeroCarta(numeroCartaIn);
     setValor(valorIn);
-    setFlag(flag);
 }
 
 Carta::Carta(){

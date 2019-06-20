@@ -92,7 +92,7 @@ int main (){
                 }
                 cout << jogo.jogadores[k].getPontosCartas() << "\nComprar uma carta? (y / n)";
                 cin >> acao;
-                if(acao == 'y'){
+                if(acao == "y"){
                     jogo.deck.darCarta(carta);
                     jogo.jogadores[k].setMao(carta);
                 }

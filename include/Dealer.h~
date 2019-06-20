@@ -15,7 +15,7 @@ public:
     ~Dealer();
     Carta getCartaFechada();
     void setCartaFechada(Carta carta);
-    int getPontosCartasDealer();
+    void getPontosCartasDealer();
 };
 
 #endif // !DEALER_H

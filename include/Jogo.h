@@ -12,7 +12,7 @@ private:
 
 public:
 
-	Jogo(int n_rodadas);
+	Jogo(int n_rodadas, vector<Player> J);
 	~Jogo();
 
     static vector<Player> jogadores;

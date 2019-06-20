@@ -7,7 +7,6 @@ class Menu{
 
 private:
     int numJogadores;
-    static string reader;
     void criaJogadores();
 
 public:

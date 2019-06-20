@@ -11,6 +11,7 @@ Menu::~Menu()
 vector<Player> Menu::jogadores;
 
 void Menu::criaJogadores(){
+
     string reader;
 
     for (int i = 1; i <= numJogadores; i++) {

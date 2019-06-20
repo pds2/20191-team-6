@@ -34,9 +34,7 @@ void Player::setMao(Carta carta){
 }
 
 void Player::cleanMao(){
-    while(mao.size() > 0) {
-        mao.pop_back();
-    }
+    mao.clear();
 }
 
 int Player::getPontoTotal(){

@@ -1,7 +1,8 @@
 #include "Jogo.h"
 
-Jogo::Jogo(int n_rodadas){
+Jogo::Jogo(int n_rodadas, vector<Player> J){
     setNumRodadas(n_rodadas);
+    jogadores = J;
     deck = Baralho();
 }
 
@@ -36,7 +37,5 @@ void Jogo::addPlayer(Player jogador){
 }
 
 void Jogo::removePlayers(){
-    while(jogadores.size() > 0){
-        jogadores.pop_back();
-    }
+    jogadores.clear();
 }

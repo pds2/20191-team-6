@@ -22,7 +22,7 @@ int main (){
     Menu menu = Menu(n_jogadores);
     menu.init();
 
-    Jogo jogo = Jogo(n_rodadas);
+    Jogo jogo = Jogo(n_rodadas, menu.jogadores);
     //setar o jogo
     //construir o estado inicial
 
@@ -36,6 +36,8 @@ int main (){
 
     cout << "Numero de jogadores: " << n_jogadores << endl;
     cout << "Numero de rodadas: " << n_rodadas << endl;
-
+    for (auto i = menu.jogadores.begin(); i != menu.jogadores.end(); i++) {
+        cout << (*i).getName() << endl;
+    }
     return 0;
 }

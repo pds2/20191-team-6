@@ -33,8 +33,4 @@ public:
 
 };
 
-Player::~Player()
-{
-}
-
 #endif // !PLAYER_H

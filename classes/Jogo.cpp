@@ -6,8 +6,10 @@ Jogo::Jogo(int n_rodadas){
 }
 
 Jogo::~Jogo(){
-    delete &deck;
+    // delete &deck;
 }
+
+vector<Player> Jogo::jogadores;
 
 void Jogo::setNumRodadas(int n_rodadas){
     numRodadas = n_rodadas;

@@ -16,20 +16,20 @@ OBJECTS := $(subst $(SRCDIR),$(OBJDIR),$(SOURCES:.$(SRCEXT)=.o))
 CFLAGS := --coverage -g -std=c++11 -Wall -O3
 INC := -I include/ -I third_party/
 
+all: main
+
 $(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
-	@mkdir -p $(@D)
-	@$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+	mkdir -p $(@D)
+	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
 main: $(OBJECTS)
-	@mkdir -p $(BINDIR)
-	@$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
+	mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
 
 #tests: $(OBJECTS)
 #	@mkdir -p $(BINDIR)
 #	$(CC) $(CFLAGS) $(INC) $(TESTER) $(TSTSOURCES) $^ -o $(BINDIR)/tester
 #	$(BINDIR)/tester
-
-all: main
 
 valgrind: main
 	valgrind --leak-check=full --track-origins=yes $(BINDIR)/main

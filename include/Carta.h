@@ -30,8 +30,4 @@ public:
     void setFlag(bool x);
 };
 
-Carta::~Carta()
-{
-}
-
 #endif // !CARTA_H

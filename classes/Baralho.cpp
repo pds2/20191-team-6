@@ -1,4 +1,4 @@
-﻿#include "Baralho.h"
+#include "Baralho.h"
 
 Baralho::Baralho(){
     int valorAux;

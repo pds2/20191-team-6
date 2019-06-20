@@ -5,9 +5,14 @@ Player::Player(string nome){
 	setPontoTotal(0);
 }
 
+Player::~Player()
+{
+}
+
 string Player::getName(){
     return name;
 }
+
 void Player::setName(string nome){
     name = nome;//funcao pra copiar, atribuicao direta funciona??
 }
@@ -15,6 +20,7 @@ void Player::setName(string nome){
 int Player::getPontosCartas(){
     return pontosCartas;
 }
+
 void Player::setPontosCartas(int x){
     pontosCartas = x;
 }
@@ -22,9 +28,11 @@ void Player::setPontosCartas(int x){
 vector<Carta> Player::getMao(){
     return mao;
 }
+
 void Player::setMao(Carta carta){
     mao.push_back(carta);
 }
+
 void Player::cleanMao(){
     while(mao.size() > 0) {
         mao.pop_back();
@@ -34,6 +42,7 @@ void Player::cleanMao(){
 int Player::getPontoTotal(){
     return pontoTotal;
 }
+
 void Player::setPontoTotal(int x){
     pontoTotal = x;
 }

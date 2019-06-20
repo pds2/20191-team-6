@@ -17,9 +17,15 @@ Carta::Carta(){
     //Paus = 2
     //Copas = 3
     //Espada = 4
+
+Carta::~Carta()
+{
+}
+
 int Carta::getNaipe(){
     return naipe;
 }
+
 void Carta::setNaipe(int x){
     naipe = x;
 }
@@ -31,6 +37,7 @@ void Carta::setNaipe(int x){
 int Carta::getNumeroCarta(){
     return numeroCarta;
 }
+
 void Carta::setNumeroCarta(int x){
     numeroCarta = x;
 }
@@ -41,6 +48,7 @@ void Carta::setNumeroCarta(int x){
 int Carta::getValor(){
     return valor;
 }
+
 void Carta::setValor(int x){
     valor = x;
 }
@@ -48,6 +56,7 @@ void Carta::setValor(int x){
 bool Carta::getFlag(){
     return flag;
 }
+
 void Carta::setFlag(bool x){
     flag = x;
 }

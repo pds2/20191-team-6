@@ -26,9 +26,4 @@ public:
 
 };
 
-Menu::~Menu()
-{
-}
-
-
 #endif // !MENU_H

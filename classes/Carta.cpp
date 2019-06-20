@@ -1,6 +1,6 @@
 #include "Carta.h"
 
-Carta::Carta(int naipeIn, int numeroCartaIn, int valorIn){
+Carta::Carta(int naipeIn, int numeroCartaIn, int valorIn, bool flag){
     setNaipe(naipeIn);
     setNumeroCarta(numeroCartaIn);
     setValor(valorIn);
@@ -10,6 +10,7 @@ Carta::Carta(){
     setNaipe(0);
     setNumeroCarta(0);
     setValor(0);
+    setFlag(true);
 }
     //get e set pro naipe
     //Ouros = 1
@@ -21,7 +22,7 @@ int Carta::getNaipe(){
 }
 void Carta::setNaipe(int x){
     naipe = x;
-}    
+}
 
     //get e set pro numero ou figura da carta
     //J = 11

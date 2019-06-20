@@ -6,10 +6,9 @@
 class Menu{
 
 private:
-    vector<Player> jogadores;
+    static vector<Player> jogadores;
     int numJogadores;
-    int numRodadas;
-    string reader;
+    static string reader;
     void criaJogadores();
 
 public:

@@ -1,8 +1,7 @@
 #include "Menu.h"
 
-Menu::Menu(int n_jogadores, int n_rodadas){
+Menu::Menu(int n_jogadores){
     setNumJogadores(n_jogadores);
-    setNumRodadas(n_rodadas);
 }
 
 
@@ -14,6 +13,7 @@ void Menu::criaJogadores(){
         cin >> reader;
         Player* jogador = new Player(reader);
         jogadores.push_back(jogador);
+        
     }
 }
 
@@ -34,12 +34,4 @@ void Menu::setNumJogadores(int n_jogadores){
 
 int Menu::getNumJogadores(){
     return numJogadores;
-}
-
-void Menu::setNumRodadas(int n_rodadas){
-    numRodadas = n_rodadas;
-}
-
-int getNumRodadas(){
-    return numRodadas;
 }

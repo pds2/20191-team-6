@@ -19,10 +19,10 @@ int main (){
     cin >> n_rodadas;
 
     //instanciar um Menu
-    Menu* menu = new Menu(n_jogadores, n_rodadas);
-    menu->init();
+    Menu menu = Menu(n_jogadores);
+    menu.init();
 
-    
+    Jogo jogo = Jogo();
     //setar o jogo
     //construir o estado inicial
 
@@ -36,6 +36,6 @@ int main (){
 
     cout << "Numero de jogadores: " << n_jogadores << endl;
     cout << "Numero de rodadas: " << n_rodadas << endl;
-    delete menu;
+
     return 0;
 }

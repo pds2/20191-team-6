@@ -8,12 +8,15 @@
 class Jogo{
 
 private:
-    vector<Player> jogadores;
+    static vector<Player> jogadores;
     Baralho deck;
-    
+    int numRodadas;
+
 public:
 	Jogo();
 	~Jogo();
+    void setNumRodadas(int n_rodadas);
+    int getNumRodadas();
 	void quemGanhou();
     void addPlayer(Player jogador);
     void removePlayers();

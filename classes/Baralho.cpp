@@ -8,7 +8,7 @@ Baralho::Baralho(){
             if (valorAux > 10) valorAux = 10;
             Carta cartaAux = Carta(i, j, valorAux, true);
             baralho.push_back(carta);
-            //destrutor da carta?
+            
         }
     }
 }

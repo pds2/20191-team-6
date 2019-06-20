@@ -10,11 +10,10 @@ class Baralho{
 
 private:
 	vector<Carta> baralho;
-    
+
 public:
 	Baralho();//construtor
 	~Baralho();//destrutor
-    //void shuffle();
     void darCarta(Carta carta);
 };
 

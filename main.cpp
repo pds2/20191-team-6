@@ -45,7 +45,7 @@ int main (){
     Jogo jogo = Jogo(n_rodadas, menu.jogadores);
     //setar o jogo
     //construir o estado inicial
-    Dealer dealer;
+    Dealer dealer = Dealer();
     dealer.setName("Cassino");
     dealer.setPontosCartas(0);
     dealer.setPontoTotal(0);
@@ -60,28 +60,47 @@ int main (){
         jogo.statusGeral();
         cout << "\nRodada " << i << "\n";
         //dando cartas iniciais
+        cout << "\n cria carta";
         Carta carta = Carta();
+        cout << "\n da carta";
         jogo.deck.darCarta(carta);
+        cout << "\n seta carta fechada dealer";
         dealer.setCartaFechada(carta);
+        cout << "\n da outra carta";
+        carta = Carta();
         jogo.deck.darCarta(carta);
+        cout << "\n coloca na mao do dealer carta";
         dealer.mao.push_back(carta);
+        cout << "\n colocou na mao do dealer";
         for(int j = 0; j < n_jogadores; j++){
+            carta = Carta();
             jogo.deck.darCarta(carta);
             jogo.jogadores[j].setMao(carta);
+            carta = Carta();
             jogo.deck.darCarta(carta);
             jogo.jogadores[j].setMao(carta);
         }
+        cout << "\n passou do for";
         //acoes dos jogadoes
-        jogo.statusRodada(dealer, naipes, nomeCartas);
+        //jogo.statusRodada(dealer, naipes, nomeCartas);
         //dealer faz sua acao primeiro
+        cout << "\n whilw dealer action";
         while(dealer.getAction()){
+            cout << "\n checa dealer pontos";
+            carta = Carta();
             if(dealer.getPontosCartasDealer() <= 16){
+                cout << "\n entrou no if";
                 jogo.deck.darCarta(carta);
+                cout << "\n deu carta";
                 dealer.mao.push_back(carta);
+                cout << "\n colocou na mao do dealer nova carta" << dealer.mao.size();
             }
-            if(dealer.getPontosCartasDealer() > 16) dealer.setAction(false);
+            else{
+                dealer.setAction(false);
+            }
         }
         //acao de cada jogador
+        cout << "\n acoes dos jogadores";
         for(int k = 0; k < n_jogadores; k++){
             jogo.statusRodada(dealer, naipes, nomeCartas);
             while(jogo.jogadores[k].getAction()){ 
@@ -93,6 +112,7 @@ int main (){
                 cout << jogo.jogadores[k].getPontosCartas() << "\nComprar uma carta? (y / n)";
                 cin >> acao;
                 if(acao == 'y'){
+                    carta = Carta();
                     jogo.deck.darCarta(carta);
                     jogo.jogadores[k].setMao(carta);
                 }

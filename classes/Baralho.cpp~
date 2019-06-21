@@ -33,7 +33,7 @@ void Baralho::darCarta(Carta carta){
 }
 
 void Baralho::shufle(){
-    for(i = 0; i < 52; i++){
+    for(int i = 0; i < 52; i++){
         baralho[i].setFlag(true);
     }
 }

@@ -13,5 +13,7 @@ void Dealer::setCartaFechada(Carta carta){
 }
 
 int Dealer::getPontosCartasDealer(){
+    cout << (getPontosCartas() + cartaFechada.getValor());
+    cout << "\n mao aberta: " << getPontosCartas(); 
     return (getPontosCartas() + cartaFechada.getValor());
 }

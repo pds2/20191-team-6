@@ -93,7 +93,7 @@ void Jogo::statusRodada(Dealer dealer, vector<string> naipes, vector<string> nom
     bool as11 = false;
     int valor = 0;
 //FAZER O PRINT DO STATUS DO DEALER!!!!!!!!!!!!!!!!!!!!!
-    cout << "\n" << dealer.getName() << ":\n" << "\nCartas na mao: ";
+    cout << "\n" << dealer.getName();
     if(dealer.mao.size() == 0){
         cout << "None";
     }   

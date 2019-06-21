@@ -2,6 +2,7 @@
 
 Baralho::Baralho(){
     int valorAux;
+    
     for(int i = 1; i < 5; i++){
         for(int j = 1; j < 14; j++){
             valorAux = j;
@@ -14,8 +15,8 @@ Baralho::Baralho(){
 }
 
 Baralho::~Baralho(){
-    for(int i = 0; i < 42; i++){
-        baralho.pop_back();
+    for(int i = 0; i < 52; i++){
+        baralho.pop_back();  
     }
 }
 

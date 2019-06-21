@@ -55,7 +55,7 @@ void Jogo::quemGanhouRodada(Dealer dealer){
 			}
         }
 	}
-	if(dealer.getPontosCartasDealer() > jogadores[i].getPontosCartas() && dealer.getPontosCartasDealer() < 22){
+	if((dealer.getPontosCartasDealer() > jogadores[i].getPontosCartas()) && (dealer.getPontosCartasDealer() < 22)){
 		looser = true;
 	}
 	if(looser){
@@ -93,7 +93,7 @@ void Jogo::statusRodada(Dealer dealer, vector<string> naipes, vector<string> nom
     bool as11 = false;
     int valor = 0;
 //FAZER O PRINT DO STATUS DO DEALER!!!!!!!!!!!!!!!!!!!!!
-    cout << "\n" << dealer.getName() << ":\n" << "\nCartas na mao: ";
+    //cout << "\n" << dealer.getName() << ":\nCartas na mao: ";
     if(dealer.mao.size() == 0){
         cout << "None";
     }   

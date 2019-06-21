@@ -63,21 +63,26 @@ int main (){
         cout << "\n cria carta";
         Carta carta = Carta();
         cout << "\n da carta";
-        jogo.deck.darCarta(carta);
+        carta = jogo.deck.darCarta();
+        cout << carta.getNaipe();
+        cout << carta.getNumeroCarta();
+        cout << carta.getValor();
         cout << "\n seta carta fechada dealer";
         dealer.setCartaFechada(carta);
         cout << "\n da outra carta";
         carta = Carta();
-        jogo.deck.darCarta(carta);
+        carta = jogo.deck.darCarta();
         cout << "\n coloca na mao do dealer carta";
         dealer.mao.push_back(carta);
         cout << "\n colocou na mao do dealer";
         for(int j = 0; j < n_jogadores; j++){
             carta = Carta();
-            jogo.deck.darCarta(carta);
+            //jogo.deck.darCarta(carta);
+            carta = jogo.deck.darCarta();
             jogo.jogadores[j].setMao(carta);
             carta = Carta();
-            jogo.deck.darCarta(carta);
+            //jogo.deck.darCarta(carta);
+            carta = jogo.deck.darCarta();
             jogo.jogadores[j].setMao(carta);
         }
         cout << "\n passou do for";
@@ -90,7 +95,8 @@ int main (){
             carta = Carta();
             if(dealer.getPontosCartasDealer() <= 16){
                 cout << "\n entrou no if";
-                jogo.deck.darCarta(carta);
+                carta = jogo.deck.darCarta();
+                //jogo.deck.darCarta(carta);
                 cout << "\n deu carta";
                 dealer.mao.push_back(carta);
                 cout << "\n colocou na mao do dealer nova carta" << dealer.mao.size();
@@ -102,6 +108,7 @@ int main (){
         //acao de cada jogador
         cout << "\n acoes dos jogadores";
         for(int k = 0; k < n_jogadores; k++){
+            cout << "\n entrou no loop dos jogadores";
             jogo.statusRodada(dealer, naipes, nomeCartas);
             while(jogo.jogadores[k].getAction()){ 
                 cout << "Acao do jogador " << jogo.jogadores[k].getName();
@@ -113,7 +120,8 @@ int main (){
                 cin >> acao;
                 if(acao == 'y'){
                     carta = Carta();
-                    jogo.deck.darCarta(carta);
+                    carta = jogo.deck.darCarta();
+                    //jogo.deck.darCarta(carta);
                     jogo.jogadores[k].setMao(carta);
                 }
                 else{

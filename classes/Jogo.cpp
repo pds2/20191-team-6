@@ -129,4 +129,4 @@ void Jogo::statusRodada(Dealer dealer, vector<string> naipes, vector<string> nom
         as11 = false;
     cout << "Valor das cartas: " << jogadores[i].getPontosCartas() << "\n";
     }
-}
+} 

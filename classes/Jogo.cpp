@@ -55,7 +55,7 @@ void Jogo::quemGanhouRodada(Dealer dealer){
 			}
         }
 	}
-	if((dealer.getPontosCartasDealer() > jogadores[i].getPontosCartas()) && (dealer.getPontosCartasDealer() < 22)){
+	if((dealer.getPontosCartas() > jogadores[i].getPontosCartas()) && (dealer.getPontosCartas() < 22)){
 		looser = true;
 	}
 	if(looser){

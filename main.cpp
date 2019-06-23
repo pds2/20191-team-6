@@ -93,7 +93,7 @@ int main (){
         while(dealer.getAction()){
             cout << "\n checa dealer pontos";
             carta = Carta();
-            if(dealer.getPontosCartasDealer() <= 16){
+            if(dealer.getPontosCartas() <= 16){
                 cout << "\n entrou no if";
                 carta = jogo.deck.darCarta();
                 //jogo.deck.darCarta(carta);

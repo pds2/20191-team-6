@@ -3,19 +3,19 @@
 
 #include "Player.h"
 #include "Carta.h"
+#include "Pessoa.h"
 
-class Dealer : public Player{
+class Dealer : public Pessoa{
 
 private:
     Carta cartaFechada;
 
 public:
-     
     Dealer(); 
     ~Dealer();
     Carta getCartaFechada();
     void setCartaFechada(Carta carta);
-    int getPontosCartasDealer();
+    int getPontosCartas() override;
 };
 
 #endif // !DEALER_H

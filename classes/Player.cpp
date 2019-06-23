@@ -1,18 +1,9 @@
 #include "Player.h"
+//virtual int getPontoTotal();
 
 Player::Player(){
 }
-
-Player::~Player()
-{
-}
-
-string Player::getName(){
-    return name;
-}
-
-void Player::setName(string nome){
-    name = nome;//funcao pra copiar, atribuicao direta funciona??
+Player::~Player(){
 }
 
 int Player::getPontosCartas(){
@@ -21,36 +12,4 @@ int Player::getPontosCartas(){
         pontosCartas += mao[i].getValor();
     }
     return pontosCartas;
-}
-
-void Player::setPontosCartas(int x){
-    pontosCartas = x;
-}
-
-vector<Carta> Player::getMao(){
-    return mao;
-}
-
-void Player::setMao(Carta carta){
-    mao.push_back(carta);
-}
-
-void Player::cleanMao(){
-    mao.clear();
-}
-
-int Player::getPontoTotal(){
-    return pontoTotal;
-}
-
-void Player::setPontoTotal(int x){
-    pontoTotal = x;
-}
-
-void Player::setAction(bool acao){
-    action = acao;
-}
-
-bool Player::getAction(){
-    return action;
 }
